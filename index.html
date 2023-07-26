@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Downloader</title>
+  <style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f1f1f1;
+margin: 0;
+padding: 0;
+}
+header {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px 0;
+}
+main {
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+}
+.pdf-list {
+list-style: none;
+padding: 0;
+}
+.pdf-item {
+margin-bottom: 10px;
+}
+.download-button {
+background-color: #007bff;
+color: #fff;
+border: none;
+padding: 8px 15px;
+text-decoration: none;
+cursor: pointer;
+border-radius: 5px;
+display: block;
+width: 100%;
+text-align: center;
+}
+.download-button:hover {
+background-color: #0056b3;
+}
+footer{
+background-color: #333; 
+color: #fff; 
+text-align: center; 
+padding: 10px 0;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PDF Downloader</h1>
+  </header>
+<main>
+<ul class="pdf-list">
+<li class="pdf-item">
+<span>Chapter_No.1 _Advanced_Web_Designing</span>
+<button class="download-button" onclick="downloadPDF('Chapter_No.1 _Advanced_Web_Designing.pdf')">Download</button>
+</li>
+</ul>
+</main>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+<p>&copy; 2023 SameemAhmad & Hasan.</p>
+  </footer>
+  <script>
+    function downloadPDF(filename) {
+      // Replace the URL with the actual location of your PDF files
+      const pdfURL = 'https://drive.google.com/file/d/15MGJ0yXzbFu0NfLrNVB0ZwCGAX8Q6KB2/view?usp=drivesdk' + filename;
+      
+      // Create a temporary anchor element to trigger the download
+      const link = document.createElement('a');
+      link.href = pdfURL;
+      link.target = '_blank'; // Open in a new tab
+      link.download = filename;
+      
+      // Append the anchor to the body and click it to initiate the download
+      document.body.appendChild(link);
+      link.click();
+
+      // Clean up by removing the anchor element
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+</html>
