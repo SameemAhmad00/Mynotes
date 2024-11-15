@@ -4,170 +4,37 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 <title>PDF Downloader</title>
-<style>body {
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #007bff;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
-
-main {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.pdf-list {
-  list-style: none;
-  padding: 0;
-}
-  
-.pdf-item {
-  margin-bottom: 10px;
-}
-  
-.download-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 8px 15px;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 5px;
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-.download-button:hover {
-  background-color: #0056b3;
-  }
-  
-footer{
-  background-color: #007bff; 
-  color: #fff; 
-  text-align: center; 
-  padding: 10px 0;
-  position: sticky;
-  top: 100%;
-}</style>
 </head>
 
+
 <body>
-<header>
+  <header>
 <h1>PDF Downloader</h1>
+
 </header>
 <main>
 <ul class="pdf-list">
 <li class="pdf-item">
-<span>12th-Science-Biology</span>
-<button class="download-button" onclick="downloadPDF1('12th-Science-Biology.pdf')">Download</button><hr><br>
 
-<span>12th-Science-Chemistry</span>
-<button class="download-button" onclick="downloadPDF2('12th-Science-Chemistry.pdf')">Download</button><hr><br>
+<h3>12th Science Textbooks</h3>
 
-<span>12th-Science-Maths-Part-1</span>
-<button class="download-button" onclick="downloadPDF3('12th-Science-Maths-Part-1.pdf')">Download</button><hr><br>
+<button class="download-button" onclick="HSC()">12th Science Textbooks</button><hr><br>
 
-<span>12th-Science-Maths-Part-2</span>
-<button class="download-button" onclick="downloadPDF4('12th-Science-Maths-Part-2.pdf')">Download</button><hr><br>
+<h3>D-Pharmacy 1st year Textbooks</h3>
 
-<span>12th-Science-Physic</span>
-<button class="download-button" onclick="downloadPDF5('12th-Science-Physic.pdf')">Download</button><hr><br>
+<button class="download-button" onclick="DPharmacy()">D-Pharmacy Textbooks</button><hr><br>
 
-<span>12th-Science-English-Solved</span>
-<button class="download-button" onclick="downloadPDF6('12th-Science-English-Solved.pdf')">Download</button><hr><br>
+
+
 </li>
 </ul>
 </main>
 <footer>
-<p>&copy; 2023 SameemAhmad & Hasan.</p>
+<p>&copy; 2024 SameemAhmad.</p>
 </footer>
-<script src="main.js">
-//1JavaScript function to download PDF
-function downloadPDF1(filename){
-// Replace the URL with the actual location of your PDF files
-const pdfURL='https://drive.google.com/file/d/1BVDwZE0cpcmV6sqJzcziWcNmjmb5PqIR/view?usp=drivesdk'+filename;
-// Create a temporary anchor element to trigger the download
-const link=document.createElement('a');
-link.href=pdfURL;
-link.target='_blank'; // Open in a new tab
-link.download=filename;
-// Append the anchor to the body and click it to initiate the download
-document.body.appendChild(link);
-link.click();
-// Clean up by removing the anchor element
-document.body.removeChild(link);
-}
 
-//2JavaScript function to download PDF
-function downloadPDF2(filename){
-const pdfURL='https://drive.google.com/file/d/1BZDdTYb91yG77SomZVh35U6r73MiF8KY/view?usp=drivesdk'+filename;
-const link=document.createElement('a');
-link.href=pdfURL;
-link.target='_blank';
-link.download=filename;
-document.body.appendChild(link);
-link.click();
-document.body.removeChild(link);
-}
-
-//3JavaScript function to download PDF
-function downloadPDF3(filename){
-const pdfURL='https://drive.google.com/file/d/1BbE7m--oT1IwETiUinw0gm9Vu7gWy_lY/view?usp=drivesdk'+filename;
-const link=document.createElement('a');
-link.href=pdfURL;
-link.target='_blank';
-link.download=filename;
-document.body.appendChild(link);
-link.click();
-document.body.removeChild(link);
-}
-
-//4JavaScript function to download PDF
-function downloadPDF4(filename){
-const pdfURL='https://drive.google.com/file/d/1BbIb96SwgjVfIa_Utq_cutHSxFIYSN9-/view?usp=drivesdk'+filename;
-const link=document.createElement('a');
-link.href=pdfURL;
-link.target='_blank';
-link.download=filename;
-document.body.appendChild(link);
-link.click();
-document.body.removeChild(link);
-}
-
-//5JavaScript function to download PDF
-function downloadPDF5(filename){
-const pdfURL='https://drive.google.com/file/d/1BkLVfT2mdKOrsIgjm4KmJU-btqA2ake_/view?usp=drivesdk'+filename;
-const link=document.createElement('a');
-link.href=pdfURL;
-link.target='_blank';
-link.download=filename;
-document.body.appendChild(link);
-link.click();
-document.body.removeChild(link);
-}
-
-//6JavaScript function to download PDF
-function downloadPDF6(filename){
-const pdfURL='https://drive.google.com/file/d/1C64b1fNUVFQwl8IrviZjBN1AkmP4mMAQ/view?usp=drivesdk'+filename;
-const link=document.createElement('a');
-link.href=pdfURL;
-link.target='_blank';
-link.download=filename;
-document.body.appendChild(link);
-link.click();
-document.body.removeChild(link);
-}
-
-</script>
+  <script src="main.js"></script>
 </body>
 </html>
