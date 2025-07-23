@@ -1,9 +1,9 @@
         //D-Pharmacy Textbooks
 
-//1JavaScript function to download PDF
+                //Social Pharmacy
 function downloadPDF1(filename){
 // Replace the URL with the actual location of your PDF files
-const pdfURL='https://drive.google.com/file/d/19tcrjNsvvnvkpLlQ486xFEFxuFJaIShh/view?usp=drivesdk'+filename;
+const pdfURL='https://drive.google.com/file/d/1hKe9JEZzLZ6Y6yUkLPmIfDfbhjynZ9oJ/view?usp=drivesdk'+filename;
 // Create a temporary anchor element to trigger the download
 const link=document.createElement('a');
 link.href=pdfURL;
@@ -17,7 +17,7 @@ document.body.removeChild(link);
 }
 
 
-//2JavaScript function to download PDF
+                //Pharmacognosy
 function downloadPDF2(filename){
 const pdfURL='https://drive.google.com/file/d/19pbXIS_knt2ZTr39PtXwXiA8rUorRVgE/view?usp=drivesdk'+filename;
 const link=document.createElement('a');
@@ -29,9 +29,9 @@ link.click();
 document.body.removeChild(link);
 }
 
-//3JavaScript function to download PDF
+                //Pharmaceutics
 function downloadPDF3(filename){
-const pdfURL='https://drive.google.com/file/d/19n_5SMs4ANUZSOOEsjdT6DXSQ_wJu0rG/view?usp=drivesdk'+filename;
+const pdfURL='https://drive.google.com/file/d/1hOXmHlQnguhJuV2jCVm2ZtoJOonIqx5g/view?usp=drivesdk'+filename;
 const link=document.createElement('a');
 link.href=pdfURL;
 link.target='_blank';
@@ -41,9 +41,9 @@ link.click();
 document.body.removeChild(link);
 }
 
-//4JavaScript function to download PDF
+                //Chemistry
 function downloadPDF4(filename){
-const pdfURL='https://drive.google.com/file/d/19nZfnx_co8F-e9Nx_kJiVu7iHBLWN3CI/view?usp=drivesdk'+filename;
+const pdfURL='https://drive.google.com/file/d/1hPtWDgLQsaNcpktFcfIGVVb8fJO0zxvi/view?usp=drivesdk'+filename;
 const link=document.createElement('a');
 link.href=pdfURL;
 link.target='_blank';
@@ -53,9 +53,9 @@ link.click();
 document.body.removeChild(link);
 }
 
-//5JavaScript function to download PDF
+                //HAP
 function downloadPDF5(filename){
-const pdfURL='https://drive.google.com/file/d/1WYKZOYvcF3ZMZoGc4ct0aTh8LqMvI3G6/view?usp=drivesdk'+filename;
+const pdfURL='https://drive.google.com/file/d/1h53hmjH43vhVUd3TsKgNoS5wNSYYlS8c/view?usp=drivesdk'+filename;
 const link=document.createElement('a');
 link.href=pdfURL;
 link.target='_blank';
